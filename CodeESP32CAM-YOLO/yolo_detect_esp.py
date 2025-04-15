@@ -10,7 +10,7 @@ layer_names = net.getLayerNames()
 output_layers = [layer_names[i - 1] for i in net.getUnconnectedOutLayers()]
 
 # Stream dari ESP32-CAM
-cap = cv2.VideoCapture("http://10.200.4.137:81/stream")  # Ganti dengan IP kamu
+cap = cv2.VideoCapture("http://192.168.1.14:81/stream")  # Ganti dengan IP kamu
 
 while True:
     ret, frame = cap.read()
