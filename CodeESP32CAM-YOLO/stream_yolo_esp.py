@@ -6,7 +6,7 @@ st.title("Human Detection (YOLOv3-tiny)")
 status_box = st.empty()
 
 # Inisialisasi kamera ESP32-CAM
-esp32_stream_url = "http://192.168.1.14:81/stream?resolution=144x144&fps=15"
+esp32_stream_url = "http://10.200.15.148:81/stream?resolution=144x144&fps=15"
 cap = cv2.VideoCapture(esp32_stream_url)
 
 # Load model YOLOv3-tiny dan kelas-kelas dari file

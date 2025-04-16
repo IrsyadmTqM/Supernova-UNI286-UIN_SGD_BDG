@@ -9,12 +9,12 @@ from PIL import Image
 from io import BytesIO
 from datetime import datetime
 
-st.set_page_config(page_title="Face Recognition Monitor", layout="centered")
+st.set_page_config(page_title="Environment Monitor", layout="centered")
 st.title("📊 ESP32 Real-time Sensor Dashboard")
 
 DATA_FILE = 'data.json'
 ESP32_CAM_URL = "http://10.200.7.163/capture"  # Ganti IP kamu
-BUZZER_TRIGGER_URL = "http://192.168.96.25:5000/trigger-buzzer"  # URL ke Flask server
+BUZZER_TRIGGER_URL = "http://10.200.37.215:5000/trigger-buzzer"  # URL ke Flask server
 
 
 # Cek dan buat file jika belum ada

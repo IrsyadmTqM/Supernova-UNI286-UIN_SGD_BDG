@@ -8,20 +8,20 @@ import socket
 import _thread
 
 # WiFi & server
-SSID = 'SIC'
-PASSWORD = '12345678'
+SSID = 'HAMZAH_ATAS'
+PASSWORD = '0702051509'
 SERVER_URL = 'http://192.168.96.25:5000/send-data'
 
 
 
 
-dht_sensor = dht.DHT11(Pin(4))      
+dht_sensor = dht.DHT11(Pin(335))      
 ldr = ADC(Pin(34))                  
 ldr.atten(ADC.ATTN_11DB)
 
-pir_sensor = Pin(5, Pin.IN)         
+pir_sensor = Pin(33, Pin.IN)         
 led = Pin(2, Pin.OUT)               
-buzzer = Pin(15, Pin.OUT)          
+buzzer = Pin(32, Pin.OUT)          
 
 
 
